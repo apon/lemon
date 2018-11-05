@@ -7,6 +7,16 @@ Android Socket Client Library.
 
 # 2.使用
 
+添加依赖Gradle:
+
+```
+compile 'me.apon:lemon:1.0.0'
+
+or
+
+implementation 'me.apon:lemon:1.0.0'
+```
+
 构建Lemon对象
 
 ```

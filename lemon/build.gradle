@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
-
+//apply plugin: 'com.novoda.bintray-release'
+apply plugin: "guru.stefma.bintrayrelease"
 android {
     compileSdkVersion 28
 
@@ -32,3 +33,19 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
+
+version = "1.0.0"
+group = "me.apon"
+androidArtifact {
+    artifactId = "lemon"
+}
+
+publish {
+    userOrg = 'apon'//bintray.com用户名
+    //groupId = 'me.apon'//jcenter上的路径
+    //artifactId = 'lemon'//项目名称
+    //publishVersion = '1.0.0'//版本号
+    desc = 'Android Socket Client Library.'
+    website = 'https://github.com/apon/lemon'
+}
+
